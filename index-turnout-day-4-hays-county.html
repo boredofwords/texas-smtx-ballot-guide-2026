@@ -28,6 +28,7 @@
 #turnout .tt-swatch.black{background:repeating-linear-gradient(90deg,#101010 0 7px,transparent 7px 11px)}
 #turnout .tt-swatch.gray{background:#8d8981}
 #turnout .tt-swatch.eighteen{background:repeating-linear-gradient(90deg,#587a84 0 3px,transparent 3px 7px)}
+#turnout .tt-legend small{font-size:10px;font-weight:normal;white-space:nowrap}
 #turnout .tt-slider{width:100%;accent-color:var(--ink);cursor:pointer;margin:12px 0 5px}
 #turnout .tt-days{display:flex;justify-content:space-between;font-size:11px;font-weight:bold}
 #turnout .tt-stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:18px 0}
@@ -48,7 +49,7 @@
 <div class="tt-switch" role="group" aria-label="Chart view"><button type="button" id="tt-cumulative" aria-pressed="true">Running total</button><button type="button" id="tt-daily" aria-pressed="false">Each day</button></div>
 <div class="tt-kicker" id="tt-chart-title">The cumulative race</div>
 <svg class="tt-chart" id="tt-svg" viewBox="0 0 360 255" role="img" aria-label="Early voting turnout by day, 2018, 2022, 2024, and available 2026 data"></svg>
-<div class="tt-legend"><span><i class="tt-swatch"></i>’26</span><span><i class="tt-swatch black"></i>’24</span><span><i class="tt-swatch gray"></i>’22</span><span><i class="tt-swatch eighteen"></i>’18</span></div>
+<div class="tt-legend"><span><i class="tt-swatch"></i>’26 <small>(Midterm)</small></span><span><i class="tt-swatch black"></i>’24 <small>(Presidential)</small></span><span><i class="tt-swatch gray"></i>’22 <small>(Midterm)</small></span><span><i class="tt-swatch eighteen"></i>’18 <small>(Midterm)</small></span></div>
 <hr class="tt-rule"><div class="tt-kicker" id="tt-day-title">Explore / Day 04 of 12</div>
 <input class="tt-slider" id="tt-day" type="range" min="1" max="12" value="4" step="1" aria-label="Explore early voting day"><div class="tt-days"><span>DAY 01</span><span>DAY 06</span><span>DAY 12</span></div>
 <div class="tt-stats"><div class="tt-stat"><b id="tt-date18">’18 / OCT 25</b><strong id="tt-value18">23,658</strong></div><div class="tt-stat"><b id="tt-date24">’24 / OCT 24</b><strong id="tt-value24">38,590</strong></div><div class="tt-stat"><b id="tt-date22">’22 / OCT 27</b><strong id="tt-value22">21,901</strong></div></div>
